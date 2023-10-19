@@ -5,7 +5,7 @@ A simple contact picker plugin which consists of:
 3) Quick navigation bar on the right
 4) Toggle button to expand and collapse the contact picker
 
-## Screenshots: 
+## Screenshots
 1. Collapsed View ![Collapsed View](screenshots/collapsedView.PNG "Collapsed View")
 2. Expanded View ![Expanded View](screenshots/expandedView.PNG "Expanded View")
 3. Search View ![Search View](screenshots/searchView.PNG "Search View")

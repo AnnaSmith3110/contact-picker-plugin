@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Picker Plugin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="contacts-container">
+        <header id="toggleHeader">
+            <div class="wrapper">
+            <h1 class="accordion-header">All Contacts</h1>
+            <div class="arrow"><i id="arrowIcon" class="fa-solid fa-angle-down"></i></div>
+        </div>
+        </header>
+        <div class="search-bar">
+            <i class="fa-solid fa-search" id="searchIcon"></i>
+            <input type="text" id="searchInput" class="accordion-content" placeholder="Search">
+        </div>
+        <div class="content">
+            <div class="contacts accordion-content">
+                <div class="contact-section"></div>
+            </div>
+            <div class="alphabetical-index accordion-content">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

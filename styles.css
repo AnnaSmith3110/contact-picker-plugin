@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --pageBgColor: #dee7f0;
+    --BgColor: #FFFFFF;
+    --txtColor: #000000;
+    --highlightColor: #f6f6f6;
+    --headerBg: #f7f7f7;
+    --liTxtColor: #3895fd;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    background-color: var(--pageBgColor);
+}
+
+.contacts-container {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    margin: 1rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: var(--BgColor);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header {
+    background-color: var(--headerBg);
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.wrapper {
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+h1.accordion-header {
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-bar {
+    position: relative;
+    padding: 5px; 
+    border: 8px solid lightgrey;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#searchInput, #searchIcon {
+    text-align: center;
+    text-decoration: none;  
+}
+#searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 100px; 
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: lightgray;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: gray;
+}
+
+#arrowIcon {
+    font-weight: 700;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    height: 0vh;
+    background: var(--BgColor);
+}
+.contacts {
+    flex: 3;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: var(--contact-section);
+}
+
+.contact-section h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: black;
+    background-color: var(--highlightColor);;
+    font-weight: 600;
+    padding: 3px 0px 5px 15px;
+}
+
+.contact-section ul {
+    list-style: none;
+}
+
+.contact-section li {
+    padding: 1px 0px 0px 10px;
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 2rem;
+    border-bottom: 2px solid #f4f3f5;
+}
+
+.contact-section li:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.alphabetical-index {
+    flex: 0.3; 
+}
+
+.alphabetical-index ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.alphabetical-index li {
+    cursor: pointer;
+    padding: 3px 0;
+    font-size: 0.6rem;
+    font-weight: 600;
+    transition: color 0.3s; 
+    color: var(--liTxtColor);
+    text-align: center;
+}
+.alphabetical-index li:hover {
+    color: #555;
+}
+.highlighted {
+    color: #333;
+    font-weight: bold;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-expanded  {
+    max-height: 1000px; 
+}
+.search-bar input, .contact-section li, .alphabetical-index li, .content {
+    transition: all 0.3s;
+}

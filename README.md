@@ -14,7 +14,7 @@ git clone https://github.com/AnnaSmith3110/contact-picker-plugin.git
 
 To change the contact data, edit the contacts.json file and load your own data.
 
-## Screenshots 
+## Screenshots: 
 1. Collapsed View ![Collapsed View](screenshots/collapsedView.PNG "Collapsed View")
 2. Expanded View ![Expanded View](screenshots/expandedView.PNG "Expanded View")
 3. Search View ![Search View](screenshots/searchView.PNG "Search View")
